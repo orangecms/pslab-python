@@ -17,6 +17,7 @@ supported = {
     0x39: TSL2561,  # Luminosity
     0x40: SHT21,  # Temperature, Humidity
     0x23: BH1750,  # Luminosity
+    0x29: VL53L1X, # Time-of-Flight
     # 0x3C:SSD1306,    #OLED display
 }
 
