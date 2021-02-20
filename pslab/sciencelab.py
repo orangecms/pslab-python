@@ -34,14 +34,14 @@ class ScienceLab(SerialHandler):
 
     def __init__(self):
         super().__init__()
-        self.logic_analyzer = LogicAnalyzer(device=self)
-        self.oscilloscope = Oscilloscope(device=self)
-        self.waveform_generator = WaveformGenerator(device=self)
-        self.pwm_generator = PWMGenerator(device=self)
-        self.multimeter = Multimeter(device=self)
-        self.power_supply = PowerSupply(device=self)
-        self.i2c = I2CMaster(device=self)
-        self.nrf = NRF24L01(device=self)
+        # self.logic_analyzer = LogicAnalyzer(device=self)
+        # self.oscilloscope = Oscilloscope(device=self)
+        # self.waveform_generator = WaveformGenerator(device=self)
+        # self.pwm_generator = PWMGenerator(device=self)
+        # self.multimeter = Multimeter(device=self)
+        # self.power_supply = PowerSupply(device=self)
+        # self.i2c = I2CMaster(device=self)
+        # self.nrf = NRF24L01(device=self)
 
         if "V6" in self.version:  # Set the built-in WS2812B to green :)
             self.rgb_led([0, 20, 0])
